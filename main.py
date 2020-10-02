@@ -152,6 +152,7 @@ def AcordesAlegre4():
     print(
         f"En la cuarta y ultima semicorchea va este acorde: {nota4elegida}, {nota4subida}, {nota4subidamas} ")
 
+
 def Acordetriste1():
     ###Realiza el primer acorde segun la nota central###
     nota1subida = ""
@@ -180,7 +181,6 @@ def Acordetriste1():
 
     print(
         f"En la primer semicorchea va este acorde: {nota_central}, {nota1subida}, {nota1subidamas} ")
-
 
 
 def Acordetriste2():
@@ -273,7 +273,6 @@ def Acordetriste4():
         f"En la la cuarta y ultima semicorchea va este acorde: {nota4elegida}, {nota4subida}, {nota4subidamas} ")
 
 
-
 ###PRINCIPAL####
 while(True):
     print("Que tipo de acorde desea, alegre o triste?")
@@ -321,4 +320,11 @@ while(True):
         break
 
     else:
-        print("Reingrese el tipo de acorde que desea")
+        salida = input(
+            "Presione 's'  si desea salir o cualquier tecla para continuar: ")
+        if (salida == 's'):
+            break
+        else:
+            pass
+
+print("Muchas gracias por usarme, hasta luego.")
